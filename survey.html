@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+<head>
 <html lang="en">
 <meta charset="UTF-8">
 <title>Survey</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<body>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="pageBody">
 
-<nav>
-    <ul>
+  <nav class = "navbar">
+    <ul class = "navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="Scenery.html">Scenery</a></li>
         <li><a href="cities.html">Cities</a></li>
@@ -14,18 +17,21 @@
       </ul>
 </nav>
 
-<h1>Arizona Survey</h1>
+<h1 class = "indexTitle">Arizona Survey</h1>
+<hr>
 
-<p>Now that you have learned a little about Arizona, please take a moment to fill
+<p class = "centeredText">Now that you have learned a little about Arizona, please take a moment to fill
     out the form below:
 </p>
 
-<form style= "border:1px solid black">
-<h2>Arizona Survey</h2>
+<form>
+<h2 class="formTitle">Arizona Survey</h2>
+
 
 <label for="city">Which Arizona city would you be most interested in visiting:</label>
 <br>
-<select name="city" id="city">
+
+<select class="selection">
   <option value="phoenix">Phoenix</option>
   <option value="tucson">Tucson</option>
   <option value="mesa">Mesa</option>
@@ -37,8 +43,9 @@
   <option value="yuma">Yuma</option>
   <option value="flagstaff">Flagstaff</option>
 </select>
+<br>
 
-<p>Which Arizona National Park would you be most interested in visiting:</p>
+<label class="secondLabel">Which Arizona National Park would you be most interested in visiting:</p>
 <input type="radio" id="canyon" name="canyon" value="canyon">
 <label for="canyon">The Grand Canyon National Park</label><br>
 <input type="radio" id="saguaro" name="saguaro" value="saguaro">
